@@ -14,5 +14,14 @@ openmenu.addEventListener("click", () => {
     openmenu.setAttribute("style","visibility: hidden;");
 })
 
+const title = document.title;
+const changetitle = "Hoop! Hemserim nereye";
 
+window.onblur = () => {
+    document.title = changetitle; 
+}
+
+window.onfocus = () => {
+    document.title = title;
+}
 

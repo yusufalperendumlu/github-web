@@ -156,8 +156,9 @@ hr
     background-size: contain;
     margin-right: 25px;
     margin-top: 25px;
-    background-position-x: 90%;
+    background-position-x: 80%;
 }
+
 
 .logo
 {
@@ -308,15 +309,16 @@ hr
 
 .features-col img
 {
-    width: 100%;
-    height: 250px;
-    margin-bottom: 10px;
+    width: 80%;
+    height: 230px;
+    margin-bottom: 15px;
 }
+
 
 .features-col img:hover
 {
     transform: scale(1.1);
-    transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in;
 }
 
 .features-col h4
@@ -388,6 +390,13 @@ hr
 {
     flex-basis: 40%;
     border-color: #5a5a5a;
+    background: #0d6efd;
+    color: #eee;
+}
+
+.btns button:hover
+{
+    background: #05429d;
 }
 
 #footer
@@ -405,7 +414,7 @@ hr
 
 .footer-links
 {
-    width: 100%;
+    width: 1440px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -438,7 +447,7 @@ hr
 
 .foot
 {
-    margin: 10%;
+    margin: 5%;
 }
 
 
