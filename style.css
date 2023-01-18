@@ -1,0 +1,484 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::-webkit-scrollbar {width: 8px;background-color: #eee;} 
+*::-webkit-scrollbar-track {background-color: #ccc;} 
+*::-webkit-scrollbar-thumb {background-color: var(--color);border-radius: 5px;}
+
+:root { 
+    --color: #5c9ef5; /* f67c92  5c9ef5 */
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: sans-serif;
+}
+
+h1
+{
+    font-size: 24px;
+    font-weight: 600;
+    user-select: none;
+}
+
+p
+{
+    font-size: 15px;
+    text-align: justify;
+    line-height: 25px;
+    color: #777;
+}
+
+a
+{
+    text-decoration: none;
+    color: #777;
+}
+
+img
+{
+    max-width: 100%;
+}
+
+li
+{
+    list-style-type: none;
+}
+
+form
+{
+    max-width: 100%;
+    margin: 30px 0;
+}
+
+input 
+{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    outline: none;
+    border: 2px solid #777;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+input:focus
+{
+    border-color: var(--color);
+    transition: all 250ms ease-out;
+}
+
+hr
+{
+    width: 100%;
+    border: 0;
+    border-top: 1px solid var(--color);
+}
+
+.container
+{
+    width: 80%;
+    margin: auto;
+}
+
+.text-left
+{
+    width: 80%;
+    margin: auto;
+}
+
+.text-right
+{
+    text-align: right !important;
+}
+
+.circle
+{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 15px 0;
+    background-color: var(--color);
+    border-radius: 50%;
+}
+
+.line
+{
+    line-height: 8px;
+}
+
+.line-1, .line-2, .line-3
+{
+    display: inline-block;
+    background-color: var(--color);
+}
+
+.line-1
+{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.line-2
+{
+    width: 80px;
+    height: 1px;
+}
+
+.line-3
+{
+    width: 60px;
+    height: 1px;
+}
+
+.btn
+{
+    font-weight: 700;
+    color: rgb(45, 45, 45);
+}
+
+#header
+{
+    height: 75vh;
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/1200px-Font_Awesome_5_brands_github.svg.png); 
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    margin-right: 25px;
+    margin-top: 25px;
+    background-position-x: 90%;
+}
+
+.logo
+{
+    width: 200px;
+    margin-top: 30px;
+}
+
+.header-content
+{
+    width: 600px;
+    margin-top: 75px;
+}
+
+.read-more
+{
+    margin: 15px 0 55px 0;
+}
+
+.sideBar
+{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: var(--color);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sideActive
+{
+    right: 0px;
+}
+
+.sideBar ul li
+{
+    margin: 30px;
+}
+
+.sideBar ul li:first-child
+{
+    margin-top: 45px;
+}
+
+.sideBar ul li a
+{
+    color: #eee;
+}
+
+#menubtn
+{
+    background: var(--color);
+    width: auto;
+    padding: 10px;
+    position: fixed;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1;
+    color: #eee;
+    visibility: visible;
+    transition: all 100ms;
+}
+
+#activeicon
+{
+    visibility: hidden;
+    background: var(--color);
+    width: auto;
+    padding: 10px;
+    position: fixed;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1;
+    color: #eee;
+    transition: all 50ms;
+}
+
+#aboutUs, #offer
+{
+    margin-top: 15%;
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.about-right, .about-left
+{
+    flex-basis: 50%;
+}
+
+.about-right h1
+{
+    font-weight: 800;
+}
+
+.about-left img
+{
+    border-radius: 15px;
+}
+
+.about-content
+{
+    max-width: 400px;
+    display: inline-block;
+}
+
+.about-content h2
+{
+    margin: 50px 0 20px;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.about-content h3
+{
+    font-size: 20px;
+    font-style: italic;
+    color: #5a5a5a;
+}
+
+#features
+{
+    padding: 70px 0;
+}
+
+.features-row
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.features-col
+{
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.features-col img
+{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 10px;
+}
+
+.features-col img:hover
+{
+    transform: scale(1.1);
+    transition: all 500ms ease-in-out;
+}
+
+.features-col h4
+{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.features-col p
+{
+    text-align: center;
+}
+
+.features-btn
+{
+    margin: 80px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.features-btn .line
+{
+    text-align: right;
+    margin-right: 25px;
+}
+
+#courses, #contact
+{
+    padding: 70px 0;
+}
+
+.courses-row, .contact-row
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.courses-left, .courses-right, .contact-left, .contact-right
+{
+    flex-basis: 50%;
+}
+
+.courses-content
+{
+    max-width: 800px;
+}
+
+.courses-content .btn
+{
+    margin: 30px 0;
+}
+
+.about-content button
+{
+    margin: 30px 0;
+}
+
+.btns
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btns button
+{
+    flex-basis: 40%;
+    border-color: #5a5a5a;
+}
+
+#footer
+{
+    margin: 30px 0;
+}
+
+.footer-row
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer-links
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-left
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-right
+{
+    margin-top: 30px;
+}
+
+.footer-left img
+{
+    width: 20%;
+}
+
+.link-title
+{
+    display: block;
+    color: var(--color);
+    width: 100%;
+}
+
+.foot
+{
+    margin: 10%;
+}
+
+
+
+.link-title small
+{
+    display: block;
+    line-height: 1.0;
+    color: #777;
+    font-size: 14px
+}
+
+.social-icon
+{
+    position: fixed;
+    top: 35%;
+    left: 0;
+    z-index: 1;
+}
+
+.social-icon a
+{
+    display: block;
+    margin: 0 0 25px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    
+}
+
+.social-icon i
+{
+    color: #6899d8;
+}
+
+.social-icon i:hover
+{
+    color: #00377e;
+}
+
+.social-icon a:hover
+{
+    transform: scale(1.5);
+}
