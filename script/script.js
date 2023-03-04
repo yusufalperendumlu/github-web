@@ -1,3 +1,8 @@
+window.addEventListener("scroll", () => {
+    document.body.style.setProperty("--scroll", window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
+}, false)
+
+
 const sideBar = document.getElementById("bar");
 const menuBtn = document.getElementById("menubtn");
 const openmenu = document.getElementById("activeicon");
